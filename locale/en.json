@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar Rail",
+    "description": "Codex-style sidebar: global panel entries collapse into a left icon rail with hover labels, and the workspace session list keeps the content column."
+  }
+}

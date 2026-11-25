@@ -1,0 +1,50 @@
+{
+  "name": "dsh-sidebar-rail",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Codex 风格侧栏：全局面板入口收进左侧图标列、悬停显示名称，工作区会话列表占用内容列。",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "ui",
+    "sidebar",
+    "rail"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunxiao11xie/dsh-sidebar-rail.git"
+  },
+  "homepage": "https://github.com/yunxiao11xie/dsh-sidebar-rail#readme",
+  "engines": {
+    "dsh": ">=0.2.0-rc.1 || >=0.2.1-rc.1 || >=0.2.2-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
