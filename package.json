@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/yunxiao11xie/dsh-sidebar-rail#readme",
   "engines": {
-    "dsh": ">=0.2.0-rc.1 || >=0.2.1-rc.1 || >=0.2.2-rc.1"
+    "dsh": ">=0.2.0-rc.1 <0.2.0 || >=0.2.1-rc.1 <0.2.1 || >=0.2.2-rc.1 <0.3.0-0"
   },
   "exports": {
     ".": "./index.js",
@@ -32,6 +32,7 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
+    "assets/icon-180.png",
     "README.md",
     "LICENSE"
   ],

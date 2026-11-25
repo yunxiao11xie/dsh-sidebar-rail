@@ -16,13 +16,11 @@ Codex 风格侧栏：把全局面板入口收进左侧图标列，工作区会�
 
 ## 安装
 
-工作区里的这个目录本身就是插件包。在 DSH 中安装：
-
-```powershell
-npx -p @deepseek-ai/dsh dsh plugin --profile desktop add <本目录绝对路径>
+```sh
+npx -p @deepseek-ai/dsh dsh plugin --profile <你的profile> add github:yunxiao11xie/dsh-sidebar-rail
 ```
 
-或在 **设置 → 插件 → 添加插件** 选择本目录。
+或在 **设置 → 插件 → 添加插件** 输入 `yunxiao11xie/dsh-sidebar-rail`。已收录到 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 精选列表后，也可在 dsh-market 插件市场里直接搜索安装。
 
 ## 与 dsh-sidebar-compact 的关系
 
